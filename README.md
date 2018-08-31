@@ -10,10 +10,14 @@
 
 **Esta deverá ser a resposta no terminal**
 
-200
+Total de Arquivos: 200
+
 Id: 4, Title: et porro tempora
+
 Id: 8, Title: quo adipisci enim quam ut ab
+
 Id: 10, Title: illo est ratione doloremque quia maiores aut
+
 Id: 11, Title: vero rerum temporibus dolor
 Id: 12, Title: ipsa repellendus fugit nisi
 Id: 14, Title: repellendus sunt dolores architecto voluptatum
