@@ -4,7 +4,30 @@ let url = 'https://jsonplaceholder.typicode.com/todos' // armazena a url de requ
 
 axios.get(url)// faz a requisição GET
     .then((res) => { // então espera a respora do servidor
-        console.log(`Total de Arquivos: ${res.data.length}`) // imprime o total de itens dentro do documento
+
+        switch (res.status){// atribui um texto de acordo com o status code
+        
+            case 200:
+            var status = 'SUCCESS'
+            break
+    
+            case '404':
+            var status = 'NOT FOUND'
+            break
+    
+            case '400':
+            var status = 'INVALID REQUEST'
+            break
+    
+            case '500':
+            var status = 'INTERNAL SERVER ERROR'
+            break
+        }
+    
+
+        console.log(`HTTP STATUS CODE ${res.status}: ${status}\n`) // imprime status code e um texto correspondente
+
+        console.log(`Total de Arquivos: ${res.data.length}\n`) // imprime o total de itens dentro do documento
 
         for (var i = 0; i < res.data.length; i++) { // percorre todos os itens do documento
 
