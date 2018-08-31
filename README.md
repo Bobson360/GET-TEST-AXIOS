@@ -4,7 +4,7 @@
 
 * abra a pasta no terminal
 
-* rode o comando node install
+* rode o comando npm install
 
 * após instalar as dependências execute o camando node index
 
