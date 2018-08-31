@@ -4,7 +4,7 @@ let url = 'https://jsonplaceholder.typicode.com/todos' // armazena a url de requ
 
 axios.get(url)// faz a requisição GET
     .then((res) => { // então espera a respora do servidor
-        console.log(res.data.length) // imprime o total de itens dentro do documento
+        console.log(`Total de Arquivos: ${res.data.length}`) // imprime o total de itens dentro do documento
 
         for (var i = 0; i < res.data.length; i++) { // percorre todos os itens do documento
 
